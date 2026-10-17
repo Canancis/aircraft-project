@@ -1,0 +1,10 @@
+
+classDiagram
+    Aircraft <|-- PassengerAircraft
+    Aircraft <|-- CargoAircraft
+    Aircraft <|-- MilitaryAircraft
+
+    Aircraft *-- FuelConsumption
+    AircraftManager o-- Aircraft
+
+    Main ..> AircraftManager
